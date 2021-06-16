@@ -1,0 +1,16 @@
+
+host: https://shang-ma.zamplus.com/admin
+
+header:
+    Cookie: UM_distinctid=17839b4466631d-0b98c602c5fb64-333769-100200-17839b44667855; _identity-backend_admin=4eab97da0bb29d5d93277f7900b3a47352829ba37d06c7ed45cc874dd8ca0fd7a%3A2%3A%7Bi%3A0%3Bs%3A23%3A%22_identity-backend_admin%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ARBquCtua9cDspwXGCB8ifCR_YI1OxrC%22%2C2592000%5D%22%3B%7D; CNZZDATA1279745375=1046066817-1615871910-https%253A%252F%252Fshang-ma.zamplus.com%252F%7C1617692315; Hm_lvt_99155c57e3d03070373e7c41a70f52e7=1615875819,1616034022,1616552321,1617695803; advanced-backend-admin-admin=jsar6n0klma6c44eulp2jgntc1; _identity-backend_admin_=50380de35d69b753173d8cb7c4fe34439bbdf8e045ef68c750b302f7ef0b7c27a%3A2%3A%7Bi%3A0%3Bs%3A24%3A%22_identity-backend_admin_%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22ARBquCtua9cDspwXGCB8ifCR_YI1OxrC%22%2C2592000%5D%22%3B%7D; _csrf-backend=7e2bc289ba6ead89084a5accd6b831569468b445db4c63487028821a054bffffa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22djPCXHz8Ni6jKvWatqsmEbuF4HyTh2-b%22%3B%7D
+
+Email:
+    username: 15608416396@163.com
+    passwd: IRNIGXCZICENPSKC
+    recv: 875728693@qq.com
+    title: 测试报告
+    content: 测试完成，具体测试结果，请查看附件
+    email_host: smtp.163.com
+    port: 25
+
+pathfile: C:\Programs\PycharmProjects\ShangMa_Admin\log
