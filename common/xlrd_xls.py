@@ -1,7 +1,12 @@
 # coding=utf-8
 
+import os
+import sys
+
 import xlrd
 import json
+admin_root = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(admin_root)
 
 """
 使用xlrd读取excle的数据，并保存为字典形式

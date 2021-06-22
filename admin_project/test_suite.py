@@ -1,16 +1,18 @@
 # coding=utf-8
-
 import sys
-from os import path
+import os
 import pytest
 
-import api_wrapper
+admin_root = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(admin_root)
+
+from admin_project.api_wrapper import APIWrapper
 from common import xlrd_xls
 from admin_project.xls_tester import XlsTester
 from common import assert_utils
 
 asserter = assert_utils.Asserter
-apis = api_wrapper.APIWrapper()
+apis = APIWrapper()
 
 """
 1、对于模块和代码不在同一目录的情况下，在脚本开头加上sys.path.append("模块路径")，把路径添加到系统的环境变量。

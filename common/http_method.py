@@ -1,4 +1,10 @@
 # coding=utf-8
+import os
+import sys
+
+admin_root = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(admin_root)
+
 import requests
 import time
 
@@ -6,7 +12,11 @@ from Log import log_request
 from Log import log_response
 
 import logging
+
 logger = logging.getLogger(__name__)
+
+
+# sys.path.append(os.path.dirname(os.path.abspath(__file__)).split("ShangMa_Admin")[0])
 
 
 class HttpMethod:

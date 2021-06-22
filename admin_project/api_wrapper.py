@@ -1,7 +1,17 @@
 # coding=utf-8
+import sys
+import os
+
+admin_root = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(admin_root)
+
 from common import http_method
 from common.xlrd_xls import XlsData
+
 import json
+
+
+# sys.path.append(os.path.dirname(os.path.abspath(__file__)).split("ShangMa_Admin")[0])
 
 
 class APIWrapper:
@@ -40,5 +50,3 @@ if __name__ == "__main__":
 
     res = api.login(test_dict)
     print(res["text"])
-
-

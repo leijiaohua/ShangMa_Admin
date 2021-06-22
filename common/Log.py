@@ -1,6 +1,11 @@
 # coding=utf-8
 import logging
 import json
+import os
+import sys
+
+admin_root = os.path.dirname(os.path.dirname(__file__))
+sys.path.append(admin_root)
 
 logger = logging.getLogger(__name__)
 
