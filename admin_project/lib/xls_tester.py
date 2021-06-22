@@ -1,7 +1,7 @@
 # coding=utf-8
-from common import assert_utils
+import assert_utils
 from assert_utils import assert_code
-import api_wrapper
+from lib import api_wrapper
 
 apis = api_wrapper.APIWrapper()
 asserter = assert_utils.Asserter

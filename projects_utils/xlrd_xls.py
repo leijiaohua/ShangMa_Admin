@@ -160,7 +160,7 @@ class XlsData:
 
 
 if __name__ == "__main__":
-    path = "../admin_project/test_data.xls"
+    path = "admin_project/data/test_data.xls"
     c = XlsData(path)
     data = c.test_dict
     print(data["test_login"][1])

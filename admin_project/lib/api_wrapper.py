@@ -5,10 +5,8 @@ import os
 admin_root = os.path.dirname(os.path.dirname(__file__))
 sys.path.append(admin_root)
 
-from common import http_method
-from common.xlrd_xls import XlsData
-
-import json
+from projects_core import http_method
+from xlrd_xls import XlsData
 
 
 # sys.path.append(os.path.dirname(os.path.abspath(__file__)).split("ShangMa_Admin")[0])
@@ -43,7 +41,7 @@ class APIWrapper:
 
 if __name__ == "__main__":
     api = APIWrapper()
-    path = "../admin_project/test_data.xls"
+    path = "../data/test_data.xls"
     c = XlsData(path)
     data = c.get_case_by_name("test_login")
     test_dict = data[0]

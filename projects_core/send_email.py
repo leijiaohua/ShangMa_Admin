@@ -1,7 +1,7 @@
 import smtplib  # smtplib这个模块是管发邮件
 import email.mime.text
 from email.mime.multipart import MIMEMultipart  # 发带附件的邮件用的
-from common.openpyxl_xls import ReadData
+from openpyxl_xls import ReadData
 
 r = ReadData()
 

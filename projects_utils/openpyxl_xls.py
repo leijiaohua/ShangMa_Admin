@@ -56,7 +56,7 @@ class ReadData(object):
 
     #读取yaml文件
     def read_yaml(self,key):
-        self.f = open('../configs/api_config.yml',encoding='utf-8')
+        self.f = open('projects_utils/api_config.yml', encoding='utf-8')
         self.data = yaml.load(self.f.read(),Loader=yaml.Loader) #读取yaml，读取后data的格式是字典；如果直接用f.read()读取，读取的格式是str
         self.f.close()
         return self.data[key]

@@ -6,10 +6,10 @@ import pytest
 admin_root = os.path.dirname(os.path.dirname(__file__))
 sys.path.append(admin_root)
 
-from admin_project.api_wrapper import APIWrapper
-from common import xlrd_xls
-from admin_project.xls_tester import XlsTester
-from common import assert_utils
+from lib.api_wrapper import APIWrapper
+import xlrd_xls
+from lib.xls_tester import XlsTester
+import assert_utils
 
 asserter = assert_utils.Asserter
 apis = APIWrapper()
@@ -26,7 +26,7 @@ apis = APIWrapper()
 
 class TestXlsData:
     # (xls文件路径)
-    test_data = xlrd_xls.XlsData("test_data.xls")
+    test_data = xlrd_xls.XlsData("admin_project/data/test_data.xls")
 
     xls_data = None
 
